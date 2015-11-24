@@ -1,0 +1,2 @@
+# BrutalDice
+A dice game
