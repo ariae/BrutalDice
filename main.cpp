@@ -1,23 +1,23 @@
-#include <iostream>             // standardbibliotek för konsol
+#include <iostream>             // standard library
 #include <cstdlib>
-//#include <iomanip>            // för att manipulera tecken inom kvotationstecken
-//#include <cctype>             // för att kolla om cin är numeriskt eller ej
+//#include <iomanip>            // I/O manipulation
+//#include <cctype>             // checking if input is numeric or not
 #include <ctime>
-#include "dice.h"               // inkludera dice.h som sköter uträkning av tärningar.
+#include "dice.h"               // including "dice.h" that runs the calculations of dices.
 //#include "bet.h"
 //#include "balance.h"
-int credits = 0;                //Insättningsmängd
-int balance = 0;                //Pengar på konto
-int play = 1;                   //Spela eller inte spela?
-int pla_round = 0;              //Spelarens vinster
-int npc_round = 0;              //NPC vinster
-int bet = 0;                    //Insats för runda
-int dice1 = rand() % 6 + 1;     //Tärning 1
-int dice2 = rand() % 6 + 1;     //Tärning 2
-int D1 = 0;                     //Spelarens maxtärning
-int D2 = 0;                     //NPC maxtärning
-int minbalance = 0;             //Minsta värde konto
-int maxbalance = 5000;          //Högsta värde konto
+int credits = 0;                //Bet amount for the current round (x/3)
+int balance = 0;                //Account balance
+int play = 1;                   //To play or not to play?
+int pla_round = 0;              //Player's winning rounds (x/3)
+int npc_round = 0;              //NPC winning rounds (x/3)
+int bet = 0;                    //Bet amount for the current round (x/3)
+int dice1 = rand() % 6 + 1;     //Dice 1
+int dice2 = rand() % 6 + 1;     //Dice 2
+int D1 = 0;                     //Player's highest dice
+int D2 = 0;                     //NPC highest dice
+int minbalance = 0;             //Minimum value account balance
+int maxbalance = 5000;          //Maxium(lol) value account balance
 
 using namespace std;
 
